@@ -26,6 +26,15 @@ def main():
     if not token:
         bot.logger.critical("No token found in the environment variables, please ensure that you have a .env file in the root directory of the project with a TOKEN variable")
         exit(1)
+
+    # Try to load all the cogs
+    for cog in get_cogs():
+        try:
+            bot.load_extension(cog)
+            bot.logger.debug("Loaded " + cog)
+        except Exception as e:
+            bot.logger.error(e)
+            bot.logger.exception(e)
     
     # Try to run the bot
     try:

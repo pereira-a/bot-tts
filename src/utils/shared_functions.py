@@ -3,9 +3,6 @@ import nextcord as _nextcord
 import traceback as _traceback
 import os as _os
 
-
-
-
 async def success(interaction: _nextcord.Interaction, message: str, ephemeral: bool = True):
     """|coro|
     
