@@ -1,0 +1,2 @@
+2024-12-15 19:52:43,992:CRITICAL:bot: No token found in the environment variables, please ensure that you have a .env file in the root directory of the project with a TOKEN variable
+2024-12-15 19:53:21,352:CRITICAL:bot: No token found in the environment variables, please ensure that you have a .env file in the root directory of the project with a TOKEN variable
