@@ -393,3 +393,7 @@ Traceback (most recent call last):
 nextcord.ext.commands.errors.ExtensionFailed: Extension 'cogs.commands.tts' raised an error: ModuleNotFoundError: No module named 'join_channel'
 
 2024-12-16 02:32:09,511:INFO:bot: We have logged in as FeinTTS#5221
+2024-12-16 02:32:17,907:INFO:bot: We have logged in as FeinTTS#5221
+2024-12-16 02:33:32,358:INFO:bot: Changes detected, reloading 1 cogs
+2024-12-16 02:33:40,408:INFO:bot: Changes detected, reloading 1 cogs
+2024-12-16 02:34:11,675:INFO:bot: Changes detected, reloading 1 cogs
