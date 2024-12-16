@@ -3437,3 +3437,101 @@
 2024-12-16 02:36:00,429:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316560429.
 2024-12-16 02:36:00,429:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316560429}.
 2024-12-16 02:36:00,447:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316560429}
+2024-12-16 02:36:05,440:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316565440.
+2024-12-16 02:36:05,440:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316565440}.
+2024-12-16 02:36:05,453:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316565440}
+2024-12-16 02:36:10,453:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316570453.
+2024-12-16 02:36:10,453:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316570453}.
+2024-12-16 02:36:10,467:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316570453}
+2024-12-16 02:36:15,455:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316575455.
+2024-12-16 02:36:15,455:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316575455}.
+2024-12-16 02:36:15,473:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316575455}
+2024-12-16 02:36:20,458:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316580458.
+2024-12-16 02:36:20,458:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316580458}.
+2024-12-16 02:36:20,474:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316580458}
+2024-12-16 02:36:22,982:DEBUG:nextcord.gateway: Keeping shard ID None websocket alive with sequence 14.
+2024-12-16 02:36:23,100:DEBUG:nextcord.gateway: For Shard ID None: WebSocket Event: {"t":null,"s":null,"op":11,"d":null}
+2024-12-16 02:36:25,459:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316585459.
+2024-12-16 02:36:25,459:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316585459}.
+2024-12-16 02:36:25,475:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316585459}
+2024-12-16 02:36:30,467:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316590467.
+2024-12-16 02:36:30,467:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316590467}.
+2024-12-16 02:36:30,484:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316590467}
+2024-12-16 02:36:35,477:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316595477.
+2024-12-16 02:36:35,477:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316595477}.
+2024-12-16 02:36:35,498:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316595477}
+2024-12-16 02:36:40,486:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316600486.
+2024-12-16 02:36:40,486:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316600486}.
+2024-12-16 02:36:40,502:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316600486}
+2024-12-16 02:36:45,492:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316605492.
+2024-12-16 02:36:45,492:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316605492}.
+2024-12-16 02:36:45,507:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316605492}
+2024-12-16 02:36:50,496:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316610496.
+2024-12-16 02:36:50,496:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316610496}.
+2024-12-16 02:36:50,514:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316610496}
+2024-12-16 02:36:55,498:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316615498.
+2024-12-16 02:36:55,498:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316615498}.
+2024-12-16 02:36:55,516:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316615498}
+2024-12-16 02:37:00,503:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316620503.
+2024-12-16 02:37:00,503:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316620503}.
+2024-12-16 02:37:00,515:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316620503}
+2024-12-16 02:37:04,238:DEBUG:nextcord.gateway: Keeping shard ID None websocket alive with sequence 14.
+2024-12-16 02:37:04,344:DEBUG:nextcord.gateway: For Shard ID None: WebSocket Event: {"t":null,"s":null,"op":11,"d":null}
+2024-12-16 02:37:05,514:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316625514.
+2024-12-16 02:37:05,514:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316625514}.
+2024-12-16 02:37:05,526:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316625514}
+2024-12-16 02:37:10,518:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316630518.
+2024-12-16 02:37:10,518:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316630518}.
+2024-12-16 02:37:10,533:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316630518}
+2024-12-16 02:37:15,528:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316635528.
+2024-12-16 02:37:15,528:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316635528}.
+2024-12-16 02:37:15,541:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316635528}
+2024-12-16 02:37:20,529:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316640529.
+2024-12-16 02:37:20,529:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316640529}.
+2024-12-16 02:37:20,542:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316640529}
+2024-12-16 02:37:25,544:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316645544.
+2024-12-16 02:37:25,544:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316645544}.
+2024-12-16 02:37:25,555:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316645544}
+2024-12-16 02:37:30,548:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316650548.
+2024-12-16 02:37:30,548:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316650548}.
+2024-12-16 02:37:30,559:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316650548}
+2024-12-16 02:37:35,552:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316655552.
+2024-12-16 02:37:35,552:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316655552}.
+2024-12-16 02:37:35,567:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316655552}
+2024-12-16 02:37:40,559:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316660559.
+2024-12-16 02:37:40,559:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316660559}.
+2024-12-16 02:37:40,572:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316660559}
+2024-12-16 02:37:45,493:DEBUG:nextcord.gateway: Keeping shard ID None websocket alive with sequence 14.
+2024-12-16 02:37:45,570:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316665570.
+2024-12-16 02:37:45,570:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316665570}.
+2024-12-16 02:37:45,582:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316665570}
+2024-12-16 02:37:45,603:DEBUG:nextcord.gateway: For Shard ID None: WebSocket Event: {"t":null,"s":null,"op":11,"d":null}
+2024-12-16 02:37:50,583:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316670583.
+2024-12-16 02:37:50,583:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316670583}.
+2024-12-16 02:37:50,597:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316670583}
+2024-12-16 02:37:55,591:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316675591.
+2024-12-16 02:37:55,591:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316675591}.
+2024-12-16 02:37:55,607:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316675591}
+2024-12-16 02:38:00,597:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316680597.
+2024-12-16 02:38:00,597:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316680597}.
+2024-12-16 02:38:00,610:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316680597}
+2024-12-16 02:38:05,600:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316685600.
+2024-12-16 02:38:05,600:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316685600}.
+2024-12-16 02:38:05,612:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316685600}
+2024-12-16 02:38:10,608:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316690608.
+2024-12-16 02:38:10,608:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316690608}.
+2024-12-16 02:38:10,621:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316690608}
+2024-12-16 02:38:15,614:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316695614.
+2024-12-16 02:38:15,614:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316695614}.
+2024-12-16 02:38:15,626:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316695614}
+2024-12-16 02:38:20,627:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316700627.
+2024-12-16 02:38:20,627:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316700627}.
+2024-12-16 02:38:20,640:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316700627}
+2024-12-16 02:38:25,634:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316705634.
+2024-12-16 02:38:25,634:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316705634}.
+2024-12-16 02:38:25,645:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316705634}
+2024-12-16 02:38:26,749:DEBUG:nextcord.gateway: Keeping shard ID None websocket alive with sequence 14.
+2024-12-16 02:38:26,855:DEBUG:nextcord.gateway: For Shard ID None: WebSocket Event: {"t":null,"s":null,"op":11,"d":null}
+2024-12-16 02:38:30,642:DEBUG:nextcord.gateway: Keeping shard ID None voice websocket alive with timestamp 1734316710642.
+2024-12-16 02:38:30,642:DEBUG:nextcord.gateway: Sending voice websocket frame: {'op': 3, 'd': 1734316710642}.
+2024-12-16 02:38:30,654:DEBUG:nextcord.gateway: Voice websocket frame received: {'op': 6, 'd': 1734316710642}
