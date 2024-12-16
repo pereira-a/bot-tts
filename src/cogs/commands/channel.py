@@ -27,7 +27,7 @@ class ChannelCommands(Cog):
         else:
             await channel.connect()
 
-        await interaction.send(f"Joined {channel.name}")
+        await interaction.send(f"TTTJoined {channel.name}")
 
 def setup(bot: Bot):
     bot.add_cog(ChannelCommands(bot))
