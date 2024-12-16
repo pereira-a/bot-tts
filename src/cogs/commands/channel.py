@@ -27,7 +27,16 @@ class ChannelCommands(Cog):
         else:
             await channel.connect()
 
-        await interaction.send(f"TTTJoined {channel.name}")
+        await interaction.send(f"Joined {channel.name}")
+    
+    @channel.subcommand(name="disconnect", description="Disconnect from the voice channel")
+    async def disconnect(self, interaction: Interaction):
+        if interaction.guild.voice_client is None:
+            await interaction.send("I'm not in a voice channel.")
+            return
+        
+        await interaction.guild.voice_client.disconnect()
+        await interaction.send("Disconnected")
 
 def setup(bot: Bot):
     bot.add_cog(ChannelCommands(bot))
