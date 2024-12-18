@@ -5,8 +5,6 @@ from .channel import join_channel
 from config import *
 from tts.monster import *
 import nextcord
-from gtts import gTTS
-import ffmpeg
 
 class TTS(Cog):
     def __init__(self, bot):
@@ -19,7 +17,7 @@ class TTS(Cog):
         await join_channel(int)
         await int.send(content="Transmitting text to speach: \"" + text + "\"", tts=True)
         try:
-            #await int.send(self.monster.generate(text))
+            await int.send(self.monster.generate(text))
             await self.play(int, "tts-audio.mp3")
         except Exception as e:
             self.bot.logger.critical("Failure while generating TTS")

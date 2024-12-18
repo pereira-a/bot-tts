@@ -1,3 +1,7 @@
+import urllib.request
+
+import requests
+
 class TTS:
     """
     Base class for Text-to-Speech (TTS) providers.
@@ -27,3 +31,18 @@ class TTS:
             NotImplementedError: If the method is not implemented by a subclass.
         """
         raise NotImplementedError("Subclass must implement abstract method")
+    
+    def download_and_save(self, url):
+        """
+        Downloads the audio file from the given URL and saves it to the local
+        filesystem.
+
+        Args:
+            url (str): The URL of the audio file to download.
+        """
+        response = requests.get(url)
+        with open("./tts-audio.mp3", "wb") as file:
+            file.write(response.content)
+        print("Audio file saved")
+
+        # urllib.request.urlretrieve(url, "mp3.mp3")

@@ -32,6 +32,7 @@ class MonsterTTS(TTS):
             print("TTS generated")
             print(response.json())
             print(response.json()['url'])
+            self.download_and_save(response.json()['url'])
             return response.json()['url']
         else:
             raise Exception("Failed to generate TTS: " + response.text)

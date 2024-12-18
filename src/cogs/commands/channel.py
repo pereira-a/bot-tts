@@ -14,12 +14,12 @@ class ChannelCommands(Cog):
 
     @channel.subcommand(name="join", description="Join a channel")
     async def join(self, interaction: Interaction):
-        join_channel(interaction)
+        await join_channel(interaction)
         await interaction.send(f"Joined {interaction.user.voice.channel.name}")
     
     @channel.subcommand(name="disconnect", description="Disconnect from the voice channel")
     async def disconnect(self, interaction: Interaction):
-        if interaction.guild.voice_client is Nonec:
+        if interaction.guild.voice_client is None:
             await interaction.send("I'm not in a voice channel.")
             return
         
