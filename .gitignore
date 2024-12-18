@@ -59,5 +59,6 @@ venv.bak/
 # VS Code
 .vscode/
 
-# mp3 files
+# Audio files
 *.mp3
+*.wav
