@@ -14,7 +14,7 @@ class TTS(Cog):
     @slash_command(name='tts', description='Generate text to speach in channel', guild_ids=GUILD_IDS)
     async def tts(self, int: Interaction, text: str):
         await join_channel(int)
-        await int.send(content="Transmitting text to speach: \"" + text + "\"", tts=True)
+        await int.send(content="TTS is being generated... Your message is: \"" + text + "\"")
         try:
             await int.send(self.monster.generate(text))
             await self.play(int, "tts-audio.mp3")
