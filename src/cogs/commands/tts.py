@@ -13,7 +13,6 @@ class TTS(Cog):
 
     @slash_command(name='tts', description='Generate text to speach in channel', guild_ids=GUILD_IDS)
     async def tts(self, int: Interaction, text: str):
-        self.bot.logger.debug("TTS command called")
         await join_channel(int)
         await int.send(content="Transmitting text to speach: \"" + text + "\"", tts=True)
         try:

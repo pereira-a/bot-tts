@@ -43,6 +43,4 @@ class TTS:
         response = requests.get(url)
         with open("./tts-audio.mp3", "wb") as file:
             file.write(response.content)
-        print("Audio file saved")
-
-        # urllib.request.urlretrieve(url, "mp3.mp3")
+        self.bot.logger.debug("Audio file downloaded and saved")
