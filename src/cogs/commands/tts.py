@@ -4,6 +4,9 @@ from nextcord import Interaction, slash_command, Embed
 from .channel import join_channel
 from config import *
 from tts.monster import *
+import nextcord
+from gtts import gTTS
+import ffmpeg
 
 class TTS(Cog):
     def __init__(self, bot):
@@ -13,10 +16,11 @@ class TTS(Cog):
     @slash_command(name='tts', description='Generate text to speach in channel', guild_ids=GUILD_IDS)
     async def tts(self, int: Interaction, text: str):
         self.bot.logger.debug("TTS command called")
-        #await join_channel(int)
+        await join_channel(int)
         await int.send(content="Transmitting text to speach: \"" + text + "\"", tts=True)
         try:
-            await int.send(self.monster.generate(text))
+            #await int.send(self.monster.generate(text))
+            await self.play(int, "tts-audio.mp3")
         except Exception as e:
             self.bot.logger.critical("Failure while generating TTS")
             self.bot.logger.exception(e)
@@ -26,6 +30,20 @@ class TTS(Cog):
                 color=0xFF0000  # Red color
             )
             await int.send(embed=embed)
+        
+    
+    async def play(self, interaction: Interaction, sound_file: str):
+         vc = interaction.guild.voice_client
+         if vc.is_connected():
+            if os.path.isfile("./" + sound_file):
+                print("File exists")
+                print("vc", str(vc))
+                vc.play(nextcord.FFmpegPCMAudio(source=sound_file), after=lambda e: print(f'Finished playing: {e}'))
+    
+    def clean_up_after_play(vc):
+       print("Cleaning up")
+
+        
 
         
 def setup(bot: Bot):
