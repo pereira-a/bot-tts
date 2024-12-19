@@ -12,11 +12,11 @@ class TTS(Cog):
         self.monster = MonsterTTS()
 
     @slash_command(name='tts', description='Generate text to speach in channel', guild_ids=GUILD_IDS)
-    async def tts(self, int: Interaction, text: str):
+    async def tts(self, int: Interaction, text: str, voice_id: str):
         await join_channel(int)
         await int.send(content="TTS is being generated... Your message is: \"" + text + "\"")
         try:
-            self.monster.generate(text)
+            self.monster.generate(text, voice_id)
             await self.play(int, "tts-audio.mp3")
         except Exception as e:
             self.bot.logger.critical("Failure while generating TTS")

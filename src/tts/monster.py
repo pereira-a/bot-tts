@@ -11,7 +11,7 @@ class MonsterTTS(TTS):
         self.api_key = os.getenv("MONSTER_TOKEN")
         
 
-    def generate(self, text):
+    def generate(self, text, voice_id):
         print("Generating TTS")
         url = 'https://api.console.tts.monster/generate'
         headers = {
@@ -19,8 +19,9 @@ class MonsterTTS(TTS):
             'Authorization': self.api_key
         }
         data = {
-            #"voice_id": "7e0ee786-b660-47ce-8de7-02fd49698efc", #start
-            "voice_id": "47906020-29e9-4903-91e3-8b66b0528410", #frog
+            #"voice_id": "7e0ee786-b660-47ce-8de7-02fd49698efc", #star
+            #"voice_id": "47906020-29e9-4903-91e3-8b66b0528410", #frog
+            "voice_id": voice_id,
             "message": text
         }
 
