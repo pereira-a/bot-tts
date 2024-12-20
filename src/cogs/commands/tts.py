@@ -9,24 +9,24 @@ import nextcord
 class TTS(Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.monster = MonsterTTS()
+        # Create a dictionary of TTS providers to allow multiple providers integrations in the future
+        self.tts_provieders = {
+            "monster": MonsterTTS()
+        }
 
     @slash_command(name='tts', description='Generate text to speach in channel', guild_ids=GUILD_IDS)
-    async def tts(self, int: Interaction, text: str, voice_id: str):
+    async def tts(self, int: Interaction, text: str, provider: str, voice_id: str):
         await join_channel(int)
         await int.send(content="TTS is being generated... Your message is: \"" + text + "\"")
         try:
-            self.monster.generate(text, voice_id)
+            if provider not in self.tts_provieders:
+                self.sendError("Invalid provider. Please try again.")
+            self.tts_provieders[provider].generate(text, voice_id)
             await self.play(int, "tts-audio.mp3")
         except Exception as e:
             self.bot.logger.critical("Failure while generating TTS")
             self.bot.logger.exception(e)
-            embed = Embed(
-                title="Error",
-                description="Failed to generate TTS. Please try again later.",
-                color=0xFF0000  # Red color
-            )
-            await int.send(embed=embed)
+            self.sendError("Failed to generate TTS. Please try again later.")
         
     
     async def play(self, interaction: Interaction, sound_file: str):
@@ -40,7 +40,13 @@ class TTS(Cog):
     def clean_up_after_play(vc):
        print("Cleaning up")
 
-        
+    async def sendError(msg: str):
+        embed = Embed(
+            title="Error",
+            description=msg,
+            color=0xFF0000  # Red color
+        )
+        await int.send(embed=embed)
 
         
 def setup(bot: Bot):
