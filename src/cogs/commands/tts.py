@@ -14,8 +14,12 @@ class TTS(Cog):
             "monster": MonsterTTS()
         }
 
-    @slash_command(name='tts', description='Generate text to speach in channel', guild_ids=GUILD_IDS)
-    async def tts(self, int: Interaction, text: str, provider: str, voice_id: str):
+    @slash_command(name="tts", description="TTS command", guild_ids=GUILD_IDS)
+    async def tts(self, interaction: Interaction):
+        pass    # Will never be called, just here to show the structure of a command
+
+    @tts.subcommand(name='generate', description='Generate text to speach in channel')
+    async def generate(self, int: Interaction, text: str, provider: str, voice_id: str):
         await join_channel(int)
         await int.send(content="TTS is being generated... Your message is: \"" + text + "\"")
         try:
@@ -28,7 +32,17 @@ class TTS(Cog):
             self.bot.logger.exception(e)
             self.sendError("Failed to generate TTS. Please try again later.")
         
-    
+    @tts.subcommand(name='providers', description='List available TTS providers')
+    async def providers(self, int: Interaction):
+        provider_list = ""
+        for provider in self.tts_provieders.keys():
+            provider_list += str(provider) + "\n"
+        embed = Embed(
+            title="Available TTS Providers",
+            description=provider_list,
+        )
+        await int.send(embed=embed)
+
     async def play(self, interaction: Interaction, sound_file: str):
          vc = interaction.guild.voice_client
          if vc.is_connected():
